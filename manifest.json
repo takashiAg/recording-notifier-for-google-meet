@@ -1,0 +1,17 @@
+{
+  "name": "meetの録画忘れないでね",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "google meetの録画を忘れないようにするプラグインです。[録画]や[rec]とつけると録画忘れしないようにアラートを出してくれます",
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
